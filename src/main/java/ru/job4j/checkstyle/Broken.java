@@ -5,23 +5,23 @@ public class Broken {
 
     private String name;
 
-    public String surname;
+    private String surname;
 
-    public static final String NEW_VALUE = "";
+    private static final String NEW_VALUE = "";
 
     public Broken() {
     }
 
-    private void echo() {
+    public void echo() {
     }
 
-    private void media(Object obj) {
+    public void media(Object obj) {
         if (obj != null) {
             System.out.println(obj);
         }
     }
 
-    private void method(int a, int b, int c) {
+    public void method(int a, int b, int c) {
 
     }
 }
