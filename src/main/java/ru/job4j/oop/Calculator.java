@@ -27,7 +27,6 @@ public class Calculator {
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        int result = calculator.sumAllOperation(5);
-        System.out.println(result);
+        System.out.println(calculator.sumAllOperation(5));
     }
 }
