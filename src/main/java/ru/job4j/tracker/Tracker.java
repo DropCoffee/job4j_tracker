@@ -24,17 +24,6 @@ public class Tracker {
         return item;
     }
 
-    public boolean replace(int id, Item item) {
-        boolean isReplace = false;
-        int index = indexOf(id);
-        if (index != -1) {
-            item.setId(items[index].getId());
-            items[index] = item;
-            isReplace = true;
-        }
-        return isReplace;
-    }
-
     public Item[] findAll() {
         return Arrays.copyOf(items, size);
     }
@@ -54,5 +43,24 @@ public class Tracker {
     public Item findById(int id) {
         int index = indexOf(id);
         return index != -1 ? items[index] : null;
+    }
+
+    public boolean replace(int id, Item item) {
+        boolean isReplace = false;
+        int index = indexOf(id);
+        if (index != -1) {
+            item.setId(items[index].getId());
+            items[index] = item;
+            isReplace = true;
+        }
+        return isReplace;
+    }
+
+    public void delete(int id) {
+        int index = indexOf(id);
+        if (index != -1) {
+            System.arraycopy(items, index + 1, items, index, size - index - 1);
+            size--;
+        }
     }
 }
