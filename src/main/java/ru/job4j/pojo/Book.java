@@ -1,11 +1,17 @@
 package ru.job4j.pojo;
 
-import java.util.Objects;
-
 public class Book {
     private String name;
 
     private int page;
+
+    public Book() {
+    }
+
+    public Book(String name, int page) {
+        this.name = name;
+        this.page = page;
+    }
 
     public String getName() {
         return name;
