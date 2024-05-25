@@ -8,5 +8,7 @@ public class Main {
         vehicle.steer();
         vehicle.brake();
         vehicle.refill();
+        Vehicle.getDragCoefficient();
+        vehicle.chargeBattery();
     }
 }
