@@ -16,4 +16,10 @@ class FactorialTest {
         assertThat(exception.getClass()).isEqualTo(IllegalArgumentException.class);
     }
 
+    @Test
+    void whenCalc4Then24() {
+        int result = new Factorial().calc(4);
+        int excepted = 24;
+        assertThat(result).isEqualTo(excepted);
+    }
 }
