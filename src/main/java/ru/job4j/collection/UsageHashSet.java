@@ -8,6 +8,7 @@ public class UsageHashSet {
         names.add("Petr");
         names.add("Ivan");
         names.add("Ivan");
+        names.add("Ivan");
         names.add("Vasily");
         for (String name : names) {
             System.out.println(name);
