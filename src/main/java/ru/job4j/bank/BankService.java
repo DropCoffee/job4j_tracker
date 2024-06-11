@@ -10,10 +10,7 @@ public class BankService {
     }
 
     public void deleteUser(String passport) {
-        User user = findByPassport(passport);
-        if (!Objects.isNull(user)) {
-            users.remove(user);
-        }
+        users.remove(new User(passport, ""));
     }
 
     public void addAccount(String passport, Account account) {
